@@ -79,10 +79,7 @@
   }
    
   footer{
-      width: 100%;
-      height: auto;
-      display: grid;
-      grid-template-columns: auto auto auto;
+
       background-color: #060922;
       padding: 20px;
       color: #B0B8C1;
@@ -93,6 +90,30 @@
       width: auto;
       height: auto;
       margin: 3px;
+  }
+
+  .padre {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+
+
+  .columna {
+    flex: 1;
+    justify-items: center;
+    text-align: left;    
+  }
+  .columna ul {
+    list-style-type: none;
+  }
+ 
+  .copy {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
   }
    
    
@@ -199,6 +220,7 @@
         padding: 0;
         display: grid;
     }
+
     nav li {
         margin: 5px;
     }

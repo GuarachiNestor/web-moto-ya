@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box; /* Asegura que el padding y border no aumenten el tamaño del elemento */
+  }
+   
+  body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background-image: url(motorcycle_night.webp);
+      background-position: center;
+      background-size: cover;  /* que cubra toda la pantalla */
+      background-attachment: fixed; /* Deja fija la imagen para que se vea cuando scrollea */
+      display: grid;
+      grid-template-rows: auto 1fr auto; /* Filas: header, contenido, footer */
+      font-family: Arial, Helvetica, sans-serif;
+   
+  }
+   
+  header {
+      background-color: #060922;
+      padding: 10px;
+  }
+   
+  nav h2 {
+      margin: 10px;
+      color: white;
+  }
+   
+  nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+   
+  nav ul {
+      margin: 10px;
+      list-style-type: none;
+      display: flex;
+  }
+   
+  nav a{
+      font-family: Arial, Helvetica, sans-serif;
+      margin-right: 50px;
+      color:  #B0B8C1;
+      text-decoration: none;
+     
+  }
+  main {
+     display: flex;
+   
+  }
+   
+  .contenedor {
+      width: 100%;
+      justify-items:center ;
+      align-content: center;
+      display: grid;
+     
+     
+  }
+   
+  .card {
+      height: auto;
+      background:  #ffffff4e;
+      backdrop-filter: blur(1rem);
+      padding: 20px;
+      border-radius: 16px;
+  }
+   
+  .card a {
+      margin: 50px;
+      font-size: 5rem;
+      font-family: "Special Gothic Expanded One", sans-serif;
+      font-weight: 700;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.6);
+      text-decoration: none;
+   
+  }
+   
+  footer{
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      background-color: #060922;
+      padding: 20px;
+      color: #B0B8C1;
+   
+  }
+   
+  footer p {
+      width: auto;
+      height: auto;
+      margin: 3px;
+  }
+   
+   
+   
+  /* aca comienza CSS de servicios*/
+   
+   
+  .contenedor-Servicios {
+      display: flex;
+      flex-wrap:wrap ;
+      gap: 60px;
+      width: 100%;
+      padding: 20px;
+      justify-content: center;
+   
+  }
+   
+  .card-servicios {
+      background: #ffffff4e;
+      backdrop-filter: blur(3rem);
+      border: 1px solid rgba(248, 248, 248, 0.411);
+      border-radius: 10px;
+      height: auto ;
+      width: 300px;
+      max-width: 300px;
+      display: flex ;
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+   
+  .card-servicios img {
+      border-radius:5px ;
+      margin: 10px;
+      max-width: 200px;
+      height: auto;
+  }
+   
+  .icono {
+      display: flex;
+      gap: 10px;
+      text-decoration: none;
+   
+  }
+   
+  .icono p {
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+     
+   
+  .icono img {
+      max-width: 20px;
+      width: 20px;
+      height: 20px;
+  }
+   
+   
+  /* aca comienza CSS de nosotros*/
+   
+  .contenedor-nosotros {
+      width: 100%;
+      justify-items:center ;
+      align-content: center;
+      margin: 30px;
+  }
+   
+  .card-nosotros {
+      height: auto;
+      background: #ffffff4e;
+      backdrop-filter: blur(3rem);
+      padding: 20px;
+      border-radius: 16px;
+  }
+   
+  .card-nosotros h1 {
+      font-family: Arial, Helvetica, sans-serif;
+  }
+   
+  .card-nosotros p {
+      font-family: Arial, Helvetica, sans-serif;
+      padding-left: 50px;
+  }
+   
+
+
+
+   
+  @media  (max-width: 768px) {
+    header {
+        background-color: #060922;
+        justify-items: center;
+        font-size: 30px;
+      
+    }
+     
+    nav {
+        justify-items: center;
+        display: grid;
+
+    }
+     
+    nav ul {
+        padding: 0;
+        display: grid;
+    }
+    nav li {
+        margin: 5px;
+    }
+     
+    nav a{
+        font-size: 1rem;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 50px;
+        color:  #B0B8C1;
+        text-decoration: none
+    }
+    
+     /* MAiN DE INDEX*/
+     
+    .card a {
+        font-size: 2rem;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+    }
+    
+  }
+
+
+
+
+
+
+  @media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        background-color: #060922;
+        padding: 10px;
+        justify-items: center;
+
+    }
+     
+    nav {
+        justify-items: center;
+        display: grid;
+        font-size: 2rem;
+    }
+    
+
+    nav ul li {
+        margin: 10px;
+        font-size: 1rem;
+    }
+     
+    nav a{
+        font-family: Arial, Helvetica, sans-serif;
+        margin-right: 50px;
+        color:  #B0B8C1;
+        text-decoration: none
+    }
+    
+     /* MAiN DE INDEX*/
+     
+    .card a {
+        font-size: 4rem;
+        font-family: "Special Gothic Expanded One", sans-serif;
+        font-weight: 700;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+        text-decoration: none;
+    }
+    
+  }
